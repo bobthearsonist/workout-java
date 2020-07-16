@@ -26,6 +26,7 @@ public class User {
     @GeneratedValue
     Long id;
     private String userName;
+    private String name; // use lib for parsing first/last/sir/etc leaves abstracted
 
     @OneToOne
     private Body body;
